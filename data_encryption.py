@@ -94,7 +94,7 @@ elif choice == "Register":
                 st.success(" ✅ Account created successfully!")
         else:
             st.warning(" ⚠️ Please enter a username and password.")
-    elif choice == "Login":
+elif choice == "Login":
         st.subheader(" 🔑 Login to your account")
 
         if time.time() < st.session_state.lockout_time:
